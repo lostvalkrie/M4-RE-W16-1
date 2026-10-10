@@ -1,0 +1,50 @@
+%buttonAndSelect {
+  background: #ffffff;
+  border: 2px solid white;
+  padding: 3px 20px;
+
+  &:hover {
+    background: lightgray;
+    border: 2px solid lightgray;
+    cursor: pointer;
+  }
+}
+
+.navMenu {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  padding: 10px;
+  background: lightblue;
+  font-size: 1.2rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+
+  .div {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+
+  .regularInput {
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+
+  .chB {
+    transform: scale(1.5);
+    cursor: pointer;
+    accent-color: #27b40a;
+  }
+
+  .select {
+    @extend %buttonAndSelect;
+  }
+
+  .subBtn {
+    @extend %buttonAndSelect;
+    font-size: 1rem;
+  }
+}

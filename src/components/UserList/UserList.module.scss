@@ -1,0 +1,9 @@
+.peopleContainer {
+  display: flex;
+  max-width: 1500px;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  margin: 0 auto;
+  justify-content: space-around;
+}
